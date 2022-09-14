@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0
+}
+.content-2 {
+    height: 740px;
+    background: greenyellow;
+    position: relative;
+}
+.content-top {
+    margin-top: 15px;
+    height: 15%;
+    width: 75%;
+    background: orange;
+    display: inline-block;
+    margin-left: 12%;
+}
+.content-top img {
+    float: left;
+}
+.content-duoi {
+    padding: 0 43%;
+    padding-top: 20px;
+    font-size: 20;
+}
+.nhap input {
+    float: left;
+    width: 5%;
+    height: 7%;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+.nhap input:first-child {
+    margin-left:43%;
+}
+.nhap .kq:last-child{
+    clear: left;
+    margin-top: 10px;
+}
+.kq table, td, th {
+    border: 1px solid;
+}
+.kq table {
+    width: 30%;
+    border-collapse: collapse;
+}
