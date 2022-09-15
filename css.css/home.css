@@ -1,9 +1,11 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: Roboto;
 }
 * a {
     text-decoration: none;
+    color: black;
 }
 * li {
     list-style-type: none;
@@ -57,6 +59,9 @@ ul.root > li {
 ul.root > li > a:hover {
     background: white;
     color: black;
+}
+ul.root > li > a {
+    color: white;
 }
 li.tha {
     position: relative;
@@ -161,10 +166,10 @@ li.tha:hover .tha1 {
 }
 .foot {
     width: 100%;
-    height: 120px;
     background: black;
     color: white;
     display: block;
+    padding-bottom: 20px;
 }
 .foot .foot-left {
     width: 50%;
