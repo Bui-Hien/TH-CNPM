@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0
+}
+.content-top {
+    height: 112px;
+    width: 70%;
+    display: inline-block;
+    background: orange;
+    line-height: 112px;
+    margin-left: 15%;
+    margin-top: 40px;
+}
+.content-top img {
+    float: left;
+}
+.content-duoi h1 {
+    text-align: center;
+    margin: 20px 0px;
+}
+.nhap input {
+    width: 6%;
+    height: 20px;
+}
+.nhap .kq {
+    margin-top: 20px;
+}
+.kq table, td, th {
+    border: 1px solid;
+}
+.kq table {
+    width: 30%;
+    border-collapse: collapse;
+}
+.cach {
+    width: 100%;
+    height: 40px;
+}
+.kq button {
+    margin: 20px 0;
+}
+.ke {
+    width: 80%;
+    margin: 0px auto;
+    margin-top: 30px;
+    border-top: 7px solid black;
+    border-radius: 50px;
+}
+.quantam {
+    margin-top: 5px;
+    margin-left: 6%;
+    height: 110px;
+    width: 100%;
+}
+.quantam ul li:first-child {
+    margin-left: 50px;
+    font-size: 35px;
+    background: blue;
+    border: 2px solid black;
+    display: inline;
+    border-radius: 10px;
+}
+.quantam ul li {
+    display: block;
+    height: 35px;
+    margin-left: 100px;
+    width: 100%;
+    margin-top: 10px;
+}
+.quantam ul li a {
+    line-height: 35px;
+    font-size: 35px;
+    color: black;
+}
+.quantam ul li img {
+    height: 35px;
+    width: 35px;
+    vertical-align: middle;
+}
+.cach {
+    width: 100%;
+    height: 40px;
+}
