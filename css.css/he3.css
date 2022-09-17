@@ -1,20 +1,15 @@
 * {
     margin: 0;
-    padding: 0;
-    font-family: Roboto;
+    padding: 0
 }
 .content-top {
     height: 112px;
-    width: 66%;
+    width: 70%;
     display: inline-block;
     background: orange;
     line-height: 112px;
     margin-left: 15%;
     margin-top: 40px;
-    text-align: center;
-}
-.content-top h1 {
-    color: white;
 }
 .content-top img {
     float: left;
@@ -26,6 +21,7 @@
 .nhap input {
     width: 6%;
     height: 20px;
+    margin: 10px -10px 0px 23px;
 }
 .nhap .kq {
     margin-top: 20px;
@@ -38,8 +34,12 @@
     width: 30%;
     border-collapse: collapse;
 }
+.cach {
+    width: 100%;
+    height: 40px;
+}
 .kq button {
-    margin-bottom: 18px;
+    margin: 20px 0;
 }
 .ke {
     width: 80%;
@@ -82,4 +82,24 @@
 .cach {
     width: 100%;
     height: 40px;
+}
+.content-duoi > h1 {
+    float: left;
+    font-size: 120px;
+    display: block;
+}
+.content-duoi .he {
+    display: inline-block;
+    width: 325px;
+}
+.content-duoi .b {
+    clear: left;
+}
+.content-duoi {
+    display: inline-block;
+    height: 100%;
+    margin-left: 390px;
+}
+.nhap1 {
+    clear: left;
 }
