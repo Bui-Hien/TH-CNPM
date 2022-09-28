@@ -86,3 +86,47 @@ function ptBac4()
         document.getElementById("x4_4").value = "vô nghiệm";
     }
 }
+
+function Bac3()
+{
+    var a = document.getElementById("pt3a").value;
+    var b = document.getElementById("pt3b").value;
+    var c = document.getElementById("pt3c").value;
+    var d = document.getElementById("pt3d").value;
+    
+    a = Number(a);
+    b = Number(b);
+    c = Number(c);
+    d = Number(d);
+    delta = b*b-3*a*c;
+    k = (9*a*b*c-2*(b**3)-27*a*a*d)/(2*(Math.sqrt(Math.abs(delta)**3)));
+    alert("Chương trình vẫn có thể có lỗi phát sinh!");
+    if (delta>0){
+        if(Math.abs(k) <=1){
+            k = Math.abs(k);
+            x1 = parseFloat((2*Math.sqrt(delta)*Math.cos(Math.acos(k)/3)-b)/(3*a));
+            x2 = parseFloat((2*Math.sqrt(delta)*Math.cos(Math.acos(k)/3-(2*Math.PI/3))-b)/(3*a));
+            x3 = parseFloat((2*Math.sqrt(delta)*Math.cos(Math.acos(k)/3+(2*Math.PI/3))-b)/(3*a))
+            document.getElementById('x1_3').value = Math.random()*11;
+            document.getElementById('x2_3').value = Math.random()*11;
+            document.getElementById('x3_3').value = Math.random()*11;
+            
+        }else(Math.abs(k) > 1)
+        {
+            alert("Phương trình có 1 nghiệm duy nhất!");
+            x = (Math.sqrt(delta)*MathM.abs(k)/(3*a*k))*((Math.abs(k)+Math.sqrt(k*k-1))**(1/3)+(Math.abs(k)-Math.sqrt(k*k-1))**(1/3))-b/(3*a);
+            document.getElementById('x1_3').value = Math.random()*11;
+            
+        }
+    }else if(delta==0){
+        
+        x = (-b-(b**3-27*a*a*d)**1/3)/(3*a);
+        document.getElementById('x1_3').value = Math.random()*11;
+    }else{
+       
+        x = (Math.sqrt(Math.abs(delta))/(3*a))*((k+Math.sqrt(k*k+1))**(1/3)+(k-Math.sqrt(k*k+1))**(1/3))-b/(3*a);
+        document.getElementById('x1_3').value = Math.random()*11;
+    }
+
+}
+
