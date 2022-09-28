@@ -3,25 +3,37 @@
     padding: 0
 }
 .content-top {
+    display: flex;
     height: 112px;
-    width: 70%;
-    display: inline-block;
-    background: orange;
+    justify-content: center;
+    margin: 45px 0;
+    overflow: hidden;
+}
+.content-top > h1 {
     line-height: 112px;
-    margin-left: 15%;
-    margin-top: 40px;
+    background-color: orange;
 }
-.content-top img {
-    float: left;
+.content-duoi {
+    display: flex;
+    justify-content: center;
 }
-.content-duoi h1 {
-    text-align: center;
-    margin: 20px 0px;
+.content-duoi > h1 {
+    font-weight: 300;
+    font-size: 60px;
 }
-.nhap input {
-    width: 6%;
+.input_nhap {
+    width: 238px;
+}
+.input_nhap input {
+    margin: 10px 0;
     height: 20px;
-    margin: 10px -20px 0px 23px;
+}
+.input_nhap input {
+    width: 30%;
+    justify-content: space-between;
+}
+.nhap_wrap-input {
+    margin: 40px 0;
 }
 .nhap .kq {
     margin-top: 20px;
@@ -34,12 +46,8 @@
     width: 30%;
     border-collapse: collapse;
 }
-.cach {
-    width: 100%;
-    height: 40px;
-}
-.kq button {
-    margin: 0px 0px 20px 20px
+.kq-table {
+    margin: 45px 0;
 }
 .ke {
     width: 80%;
@@ -82,24 +90,4 @@
 .cach {
     width: 100%;
     height: 40px;
-}
-.content-duoi > h1 {
-    float: left;
-    font-size: 75px;
-    display: block;
-}
-.content-duoi .he {
-    display: inline-block;
-    width: 220px;
-}
-.content-duoi .b {
-    clear: left;
-}
-.content-duoi {
-    display: inline-block;
-    height: 100%;
-    margin-left: 470px;
-}
-.nhap1 {
-    clear: left;
 }

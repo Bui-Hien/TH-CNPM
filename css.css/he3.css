@@ -3,25 +3,37 @@
     padding: 0
 }
 .content-top {
+    display: flex;
     height: 112px;
-    width: 70%;
-    display: inline-block;
-    background: orange;
+    justify-content: center;
+    margin: 45px 0;
+    overflow: hidden;
+}
+.content-top > h1 {
     line-height: 112px;
-    margin-left: 15%;
-    margin-top: 40px;
+    background-color: orange;
 }
-.content-top img {
-    float: left;
+.content-duoi {
+    display: flex;
+    justify-content: center;
 }
-.content-duoi h1 {
-    text-align: center;
-    margin: 20px 0px;
+.content-duoi > h1 {
+    font-weight: 300;
+    font-size: 85px;
 }
-.nhap input {
-    width: 6%;
+.input_nhap {
+    width: 325px;
+}
+.input_nhap input {
+    margin: 10px 0;
     height: 20px;
-    margin: 10px -10px 0px 23px;
+}
+.input_nhap input {
+    width: 20%;
+    justify-content: space-between;
+}
+.nhap_wrap-input {
+    margin: 40px 0;
 }
 .nhap .kq {
     margin-top: 20px;
@@ -34,16 +46,12 @@
     width: 30%;
     border-collapse: collapse;
 }
-.cach {
-    width: 100%;
-    height: 40px;
-}
-.kq button {
-    margin: 20px 0;
+.kq-table {
+    margin: 45px 0;
 }
 .ke {
     width: 80%;
-    margin: 0px auto;
+    margin: 0 auto;
     margin-top: 30px;
     border-top: 7px solid black;
     border-radius: 50px;
@@ -82,24 +90,4 @@
 .cach {
     width: 100%;
     height: 40px;
-}
-.content-duoi > h1 {
-    float: left;
-    font-size: 120px;
-    display: block;
-}
-.content-duoi .he {
-    display: inline-block;
-    width: 325px;
-}
-.content-duoi .b {
-    clear: left;
-}
-.content-duoi {
-    display: inline-block;
-    height: 100%;
-    margin-left: 390px;
-}
-.nhap1 {
-    clear: left;
 }
