@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="css.css/home.css">
     <link rel="stylesheet" type="text/css" href="css.css/he3.css">
+    <script src="js.js/function.js"></script>
 </head>
 <body>
 <div class="container">
@@ -59,26 +60,26 @@
                     <form>
                         <div class="nhap_wrap-input">
                             <div class="nhap1 input_nhap">
-                                <input type="number" name="n1" placeholder="Nhạp A1">
-                                <input type="number" name="n2" placeholder="Nhạp B1">
-                                <input type="number" name="n3" placeholder="Nhạp C1">
-                                <input type="number" name="n4" placeholder="Nhạp D1">
+                                <input type="number" name="n1" placeholder="Nhạp A1" id="d1_a">
+                                <input type="number" name="n2" placeholder="Nhạp B1" id="d1_b">
+                                <input type="number" name="n3" placeholder="Nhạp C1" id="d1_c">
+                                <input type="number" name="n4" placeholder="Nhạp D1" id="d1_d">
                             </div>
                             <div class="nhap2 input_nhap">
-                                <input type="number" name="n5" placeholder="Nhạp A2">
-                                <input type="number" name="n6" placeholder="Nhạp B2">
-                                <input type="number" name="n7" placeholder="Nhạp C2">
-                                <input type="number" name="n8" placeholder="Nhạp D2">
+                                <input type="number" name="n5" placeholder="Nhạp A2" id="d2_a">
+                                <input type="number" name="n6" placeholder="Nhạp B2" id="d2_b">
+                                <input type="number" name="n7" placeholder="Nhạp C2" id="d2_c">
+                                <input type="number" name="n8" placeholder="Nhạp D2" id="d2_d"> 
                             </div>
                             <div class="nhap2 input_nhap">
-                                <input type="number" name="n9" placeholder="Nhạp A3">
-                                <input type="number" name="n10" placeholder="Nhạp B3">
-                                <input type="number" name="n11" placeholder="Nhạp C3">
-                                <input type="number" name="n12" placeholder="Nhạp D3">
+                                <input type="number" name="n9" placeholder="Nhạp A3" id="d3_a">
+                                <input type="number" name="n10" placeholder="Nhạp B3" id="d3_b">
+                                <input type="number" name="n11" placeholder="Nhạp C3" id="d3_c">
+                                <input type="number" name="n12" placeholder="Nhạp D3" id="d3_d">
                             </div>
                         </div>
                         <div class="kq">
-                            <button type="button">Giải Phương Trình</button>
+                            <button type="button" onclick="hpt_3an()">Giải Phương Trình</button>
                             <table class="kq-table">
                                 <tr>
                                     <th>Biến</th>
@@ -86,15 +87,15 @@
                                 </tr>
                                 <tr>
                                     <td>x</td>
-                                    <td><output name="x1"></output> </td>
+                                    <td><output name="x1" id="x"></output> </td>
                                 </tr>
                                 <tr>
                                     <td>y</td>
-                                    <td><output name="x2"></output> </td>
+                                    <td><output name="x2" id="y"></output> </td>
                                 </tr>
                                 <tr>
                                     <td>y</td>
-                                    <td><output name="x2"></output> </td>
+                                    <td><output name="x2" id="z"></output> </td>
                                 </tr>
                             </table>
                         </div>
