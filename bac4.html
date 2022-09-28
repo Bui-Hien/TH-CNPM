@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="css.css/home.css">
     <link rel="stylesheet" type="text/css" href="css.css/bac4.css">
+    <script language ="javascript" src="js.js/function.js"></script>
 </head>
 <body>
 <div class="container">
@@ -52,13 +53,13 @@
             <div class="nhap">
                 <center>
                     <form>
-                        <input type="text" name="n1" placeholder="Nhạp a">
-                        <input type="text" name="n2" placeholder="Nhạp b">
-                        <input type="text" name="n3" placeholder="Nhạp c">
-                        <input type="text" name="n4" placeholder="Nhạp d">
-                        <input type="text" name="n5" placeholder="Nhạp f">
+                        <input type="text" name="n1" placeholder="Nhạp a" id="an4a">
+                        <input type="text" name="n2" placeholder="Nhạp b" id="an4b">
+                        <input type="text" name="n3" placeholder="Nhạp c" id="an4c">
+                        <input type="text" name="n4" placeholder="Nhạp d" id="an4d">
+                        <input type="text" name="n5" placeholder="Nhạp f" id="an4f">
                         <div class="kq">
-                            <button>Giải Phương Trình</button>
+                            <button type="button" onclick="ptBac4()">Giải Phương Trình</button>
                             <table>
                                 <tr>
                                     <th>Biến</th>
@@ -66,19 +67,19 @@
                                 </tr>
                                 <tr>
                                     <td>x1</td>
-                                    <td><output name="x1"></output> </td>
+                                    <td><output name="x1" id="x1_4"></output> </td>
                                 </tr>
                                 <tr>
                                     <td>x2</td>
-                                    <td><output name="x2"></output> </td>
+                                    <td><output name="x2" id="x2_4"></output> </td>
                                 </tr>
                                 <tr>
                                     <td>x3</td>
-                                    <td><output name="x3"></output> </td>
+                                    <td><output name="x3" id="x3_4"></output> </td>
                                 </tr>
                                 <tr>
                                     <td>x4</td>
-                                    <td><output name="x3"></output> </td>
+                                    <td><output name="x3" id="x4_4"></output> </td>
                                 </tr>
 
                             </table>
