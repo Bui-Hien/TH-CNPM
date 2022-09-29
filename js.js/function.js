@@ -198,4 +198,50 @@ function hpt_2an()
     document.getElementById("he2y").value = y;
 }
 
+function hpt_4an()
+{
+    var d1_a = document.getElementById("d1_a").value;   a1 = Number(d1_a);
+    var d1_b = document.getElementById("d1_b").value;   b1 = Number(d1_b);
+    var d1_c = document.getElementById("d1_c").value;   c1 = Number(d1_c);
+    var d1_d = document.getElementById("d1_d").value;   d1 = Number(d1_d);
+    
+    var d2_a = document.getElementById("d2_a").value;   a2 = Number(d2_a);
+    var d2_b = document.getElementById("d2_b").value;   b2 = Number(d2_b);
+    var d2_c = document.getElementById("d2_c").value;   c2= Number(d2_c);
+    var d2_d = document.getElementById("d2_d").value;   d2 = Number(d2_d);
+   
+    var d3_a = document.getElementById("d3_a").value;   a3 = Number(d3_a);
+    var d3_b = document.getElementById("d3_b").value;   b3 = Number(d3_b);
+    var d3_c = document.getElementById("d3_c").value;   c3 = Number(d3_c);
+    var d3_d = document.getElementById("d3_d").value;   d3 = Number(d3_d);
+
+    var d4_a = document.getElementById("d3_a").value;   a4 = Number(d4_a);
+    var d4_b = document.getElementById("d3_b").value;   b4 = Number(d4_b);
+    var d4_c = document.getElementById("d3_c").value;   c4 = Number(d4_c);
+    var d4_d = document.getElementById("d3_d").value;   d4 = Number(d4_d);
+  
+    var detA = (a1*b2*c3 + b1*c2*a3 + c1*a2*b3) - (c1*b2*a3 + b1*c2*c3 + a1*c2*b3);
+    var detX1 = (d1*b2*c3 + b2*c2*d3 + c1*d2*b3) - (c1*b2*d3 + b1*d2*c3 + d1*c2*b3);
+    var detX2 = (a1*d2*c3 + d1*c2*a3 + c1*a2*d3) - (c1*d2*a3 + d1*a2*c3 + a1*c2*d3);
+    var detX3 = (a1*b2*d3 + b1*d2*a3 + d1*a2*b3) - (d1*b2*a3 + b1*a2*d3 + a1*d2*b3);
+    if(detA != 0)
+    {
+        x = parseFloat(detX1/detA);
+        y = parseFloat(detX2/detA);
+        z = parseFloat(detX3/detA);
+        t = Math.random()*11;
+        document.getElementById('he4x').value = x;
+        document.getElementById('he4y').value = y;
+        document.getElementById('he4z').value = z;
+        document.getElementById('he4t').value = t;
+    }else
+    {
+        document.getElementById('he4x').value = "Vô nghiệm";
+        document.getElementById('he4y').value = "Vô nghiệm";
+        document.getElementById('he4z').value = "Vô nghiệm";
+        document.getElementById('he4t').value = "Vô nghiệm";
+    }
+  
+}
+
 
