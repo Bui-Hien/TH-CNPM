@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="css.css/home.css">
     <link rel="stylesheet" type="text/css" href="css.css/he2.css">
+    <script src="js.js/function.js"></script>
 </head>
 <body>
 <div class="container">
@@ -58,19 +59,19 @@
                     <form>
                         <div class="nhap_wrap-input">
                             <div class="nhap1 input_nhap">
-                                <input type="text" name="n1" placeholder="Nhạp A1">
-                                <input type="text" name="n2" placeholder="Nhạp B1">
-                                <input type="text" name="n3" placeholder="Nhạp C1">
+                                <input type="text" name="n1" placeholder="Nhạp A1" id="d1_he2a">
+                                <input type="text" name="n2" placeholder="Nhạp B1" id="d1_he2b">
+                                <input type="text" name="n3" placeholder="Nhạp C1" id="d1_he2c">
                             </div>
                             <div class="nhap2 input_nhap">
-                                <input type="text" name="n4" placeholder="Nhạp A2'">
-                                <input type="text" name="n5" placeholder="Nhạp B2'">
-                                <input type="text" name="n6" placeholder="Nhạp C2'">
+                                <input type="text" name="n4" placeholder="Nhạp A" id="d2_he2a">
+                                <input type="text" name="n5" placeholder="Nhạp B2" id="d2_he2b">
+                                <input type="text" name="n6" placeholder="Nhạp C2" id="d2_he2c">
                             </div>
                         </div>
 
                         <div class="kq">
-                            <button type="button">Giải Phương Trình</button>
+                            <button type="button" onclick="hpt_2an()">Giải Phương Trình</button>
                             <table class="kq-table">
                                 <tr>
                                     <th>Biến</th>
@@ -78,11 +79,11 @@
                                 </tr>
                                 <tr>
                                     <td>x</td>
-                                    <td><output name="x1"></output> </td>
+                                    <td><output name="x1" id="he2x"></output></td>
                                 </tr>
                                 <tr>
                                     <td>y</td>
-                                    <td><output name="x2"></output> </td>
+                                    <td><output name="x2" id="he2y"></output></td>
                                 </tr>
                             </table>
                         </div>

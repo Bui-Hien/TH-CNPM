@@ -170,5 +170,32 @@ function hpt_3an()
   
 
 }
+function hpt_2an()
+{
+   
+    var d1_a = document.getElementById("d1_he2a").value;   a1 = Number(d1_a);
+    var d1_b = document.getElementById("d1_he2b").value;   b1 = Number(d1_b);
+    var d1_c = document.getElementById("d1_he2c").value;   c1 = Number(d1_c);
+ 
+    
+    var d2_a = document.getElementById("d2_he2a").value;   a2 = Number(d2_a);
+    var d2_b = document.getElementById("d2_he2b").value;   b2 = Number(d2_b);
+    var d2_c = document.getElementById("d2_he2c").value;   c2= Number(d2_c);
+ 
+    alert("ok");
+    heso = parseFloat(a2/a1);
+    a1 = a1*heso;
+    b1 = b1*heso;
+    c1 = c1*heso;
+    alert("nghiệm2"+a1+b1+b2);
+    a2 = a2-a1;
+    b2 = b2-b1;
+    c2 = c2-c1;
+    alert("!!!"+a2+b2+c2);
+    y = parseFloat(c2/b2);
+    x = parseFloat((c1-b1*y)/a1);
+    document.getElementById("he2x").value = x;
+    document.getElementById("he2y").value = y;
+}
 
 
