@@ -1,31 +1,39 @@
 * {
     margin: 0;
-    padding: 0;
-    font-family: Roboto;
+    padding: 0
 }
 .content-top {
+    display: flex;
     height: 112px;
-    width: 66%;
-    display: inline-block;
-    background: orange;
+    justify-content: center;
+    margin: 45px 0;
+    overflow: hidden;
+}
+.content-top > h1 {
     line-height: 112px;
-    margin-left: 15%;
-    margin-top: 40px;
-    text-align: center;
+    background-color: orange;
 }
-.content-top h1 {
-    color: white;
+.content-duoi {
+    display: flex;
+    justify-content: center;
 }
-.content-top img {
-    float: left;
+.content-duoi > h1 {
+    font-weight: 300;
+    font-size: 85px;
 }
-.content-duoi h1 {
-    text-align: center;
-    margin: 20px 0px;
+.input_nhap {
+    width: 325px;
 }
-.nhap input {
-    width: 6%;
+.input_nhap input {
+    margin: 10px 0;
     height: 20px;
+}
+.input_nhap input {
+    width: 20%;
+    justify-content: space-between;
+}
+.nhap_wrap-input {
+    margin: 40px 0;
 }
 .nhap .kq {
     margin-top: 20px;
@@ -38,12 +46,12 @@
     width: 30%;
     border-collapse: collapse;
 }
-.kq button {
-    margin-bottom: 18px;
+.kq-table {
+    margin: 45px 0;
 }
 .ke {
     width: 80%;
-    margin: 0px auto;
+    margin: 0 auto;
     margin-top: 30px;
     border-top: 7px solid black;
     border-radius: 50px;

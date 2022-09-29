@@ -1,49 +1,52 @@
-* {
-    margin: 0;
-    padding: 0;
-    font-family: Roboto;
-}
-.content-top {
+.content__header {
     height: 112px;
-    width: 66%;
-    display: inline-block;
-    background: orange;
+    display: flex;
+    justify-content: center;
+    margin: 45px 0;
+}
+.content__heading {
     line-height: 112px;
-    margin-left: 15%;
-    margin-top: 40px;
-    text-align: center;
+    background-color: orange;
 }
-.content-top h1 {
-    color: white;
+.content__tinh-input {
+    height: 100px;
+    margin: 50px 0;
 }
-.content-top img {
-    float: left;
+.content__tinh-input-space {
+    margin: 10px 0;
 }
-.content-duoi h1 {
-    text-align: center;
-    margin: 20px 0px;
+.content__tinh {
+    height: 200px;
+    display: flex;
+    justify-content: center;
 }
-.nhap input {
-    width: 6%;
+.content__tinh-input-input {
+    display: flex;
+    justify-content: space-around;
+}
+.content__tinh-input input {
+    width: 50px;
     height: 20px;
 }
-.nhap .kq {
-    margin-top: 20px;
+.content__tinh-output {
+    display: flex;
 }
-.kq table, td, th {
-    border: 1px solid;
-    text-align: center;
+.content__tinh-output-output {
+    width: 50px;
+    height: 20px;
+    border: 1px solid black;
+
 }
-.kq table {
-    width: 30%;
-    border-collapse: collapse;
+.content__hinh img {
+    width: 200px;
 }
-.kq button {
-    margin-bottom: 18px;
-}
+
+
+
+
 .ke {
     width: 80%;
-    margin: 0px auto;
+    margin: 0 auto;
     margin-top: 30px;
     border-top: 7px solid black;
     border-radius: 50px;

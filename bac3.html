@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="css.css/home.css">
     <link rel="stylesheet" type="text/css" href="css.css/bac3.css">
+    <script language ="javascript" src="js.js/function.js"></script>
 </head>
 <body>
 <div class="container">
@@ -16,27 +17,28 @@
                     <li class="menuli"><a href="homepage.html">Trang Chủ</a></li>
                     <li class="menuli tha"><a href="#">Giải Phương Trình</a>
                         <ul class="tha1">
-                            <li><a href="bac2.html">Phương Trình Bậc Hai</a></li>
-                            <li><a href="bac3.html">Phương Trình Bậc Ba</a></li>
-                            <li><a href="bac4.html">Phương Trình Bậc Bốn</a></li>
+                            <li><a href="bac2.html">Phương Trình Bậc 2</a></li>
+                            <li><a href="bac3.html">Phương Trình Bậc 3</a></li>
+                            <li><a href="bac4.html">Phương Trình Bậc 4</a></li>
                         </ul>
                     </li>
                     <li class="menuli tha"><a href="#">Tính Diện Tích</a>
                         <ul class="tha2">
                             <li><a href="hinhvuong.html"> Hình Vuông</a></li>
-                            <li><a href="hinhtron.html"> Hình Tròn</a></li>
+                            <li><a href="hinhtron.html"> Hình Chữ Nhật</a></li>
                             <li><a href="tamgiac.html"> Hình Tam Giác</a></li>
 
                         </ul>
                     </li>
                     <li class="menuli tha"><a href="#">Hệ Phương Trình</a>
                         <ul class="tha2">
-                            <li><a href="hinhvuong.html"> Bậc Hai</a></li>
-                            <li><a href="hinhtron.html">Bậc Ba</a></li>
-                            <li><a href="tamgiac.html"> Bậc Bốn</a></li>
+                            <li><a href="he2.html"> Bậc Hai</a></li>
+                            <li><a href="he3.html">Bậc Ba</a></li>
+                            <li><a href="he4.html"> Bậc Bốn</a></li>
 
                         </ul>
                     </li>
+                    <li class="menuli"><a href="trogiup.html">Trợ Giúp</a></li>
                 </ul>
             </div>
         </div>
@@ -51,12 +53,12 @@
             <div class="nhap">
                 <center>
                     <form>
-                        <input type="text" name="n1" placeholder="Nhạp a">
-                        <input type="text" name="n2" placeholder="Nhạp b">
-                        <input type="text" name="n3" placeholder="Nhạp c">
-                        <input type="text" name="n4" placeholder="Nhạp d">
+                        <input type="number" name="n1" placeholder="Nhạp a" id="pt3a">
+                        <input type="number" name="n2" placeholder="Nhạp b" id="pt3b">
+                        <input type="number" name="n3" placeholder="Nhạp c" id="pt3c">
+                        <input type="number" name="n4" placeholder="Nhạp d" id="pt3d">
                         <div class="kq">
-                            <button>Giải Phương Trình</button>
+                            <button type="button" onclick="Bac3()">Giải Phương Trình</button>
                             <table>
                                 <tr>
                                     <th>Biến</th>
@@ -64,15 +66,15 @@
                                 </tr>
                                 <tr>
                                     <td>x1</td>
-                                    <td><output name="x1"></output> </td>
+                                    <td><output name="x1" id="x1_3"></output> </td>
                                 </tr>
                                 <tr>
                                     <td>x2</td>
-                                    <td><output name="x2"></output> </td>
+                                    <td><output name="x2" id="x2_3"></output> </td>
                                 </tr>
                                 <tr>
                                     <td>x3</td>
-                                    <td><output name="x3"></output> </td>
+                                    <td><output name="x3" id="x3_3"></output> </td>
                                 </tr>
                             </table>
                         </div>

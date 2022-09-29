@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="css.css/home.css">
-    <link rel="stylesheet" type="text/css" href="css.css/bac3.css">
+    <link rel="stylesheet" type="text/css" href="css.css/he3.css">
+    <script src="js.js/function.js"></script>
 </head>
 <body>
 <div class="container">
@@ -16,9 +17,9 @@
                     <li class="menuli"><a href="homepage.html">Trang Chủ</a></li>
                     <li class="menuli tha"><a href="#">Giải Phương Trình</a>
                         <ul class="tha1">
-                            <li><a href="bac2.html">Phương Trình Bậc Hai</a></li>
-                            <li><a href="bac3.html">Phương Trình Bậc Ba</a></li>
-                            <li><a href="bac4.html">Phương Trình Bậc Bốn</a></li>
+                            <li><a href="bac2.html">Phương Trình Bậc 2</a></li>
+                            <li><a href="bac3.html">Phương Trình Bậc 3</a></li>
+                            <li><a href="bac4.html">Phương Trình Bậc 4</a></li>
                         </ul>
                     </li>
                     <li class="menuli tha"><a href="#">Tính Diện Tích</a>
@@ -31,48 +32,70 @@
                     </li>
                     <li class="menuli tha"><a href="#">Hệ Phương Trình</a>
                         <ul class="tha2">
-                            <li><a href="hinhvuong.html"> Bậc Hai</a></li>
-                            <li><a href="hinhtron.html">Bậc Ba</a></li>
-                            <li><a href="tamgiac.html"> Bậc Bốn</a></li>
+                            <li><a href="he2.html"> Bậc Hai</a></li>
+                            <li><a href="he3.html">Bậc Ba</a></li>
+                            <li><a href="he4.html"> Bậc Bốn</a></li>
 
                         </ul>
                     </li>
+                    <li class="menuli"><a href="trogiup.html">Trợ Giúp</a></li>
                 </ul>
             </div>
         </div>
         <div class="content-3">
             <div class="content-top">
                 <img src="img/but.png">
-                <h1>GIẢI PHƯƠNG TRÌNH BẬC BA ONLINE</h1>
+                <h1>GIẢI HỆ PHƯƠNG TRÌNH BA ẨN ONLINE</h1>
             </div>
             <div class="content-duoi">
-                <h1>Ax^3+Bx^2+Cx+d=0</h1>
+                <h1>{</h1>
+                <div class="he">
+                    <h1 class="a">A1x + B1y + C1z = D1</h1>
+                    <h1 class="b">A2x + B2y + C2z = D2</h1>
+                    <h1 class="c">A3x + B3y + C3z = D3</h1>
+                </div>
             </div>
             <div class="nhap">
                 <center>
                     <form>
-                        <input type="text" name="n1" placeholder="Nhạp a">
-                        <input type="text" name="n2" placeholder="Nhạp b">
-                        <input type="text" name="n3" placeholder="Nhạp c">
-                        <input type="text" name="n4" placeholder="Nhạp d">
+                        <div class="nhap_wrap-input">
+                            <div class="nhap1 input_nhap">
+                                <input type="number" name="n1" placeholder="Nhạp A1" id="d1_a">
+                                <input type="number" name="n2" placeholder="Nhạp B1" id="d1_b">
+                                <input type="number" name="n3" placeholder="Nhạp C1" id="d1_c">
+                                <input type="number" name="n4" placeholder="Nhạp D1" id="d1_d">
+                            </div>
+                            <div class="nhap2 input_nhap">
+                                <input type="number" name="n5" placeholder="Nhạp A2" id="d2_a">
+                                <input type="number" name="n6" placeholder="Nhạp B2" id="d2_b">
+                                <input type="number" name="n7" placeholder="Nhạp C2" id="d2_c">
+                                <input type="number" name="n8" placeholder="Nhạp D2" id="d2_d"> 
+                            </div>
+                            <div class="nhap2 input_nhap">
+                                <input type="number" name="n9" placeholder="Nhạp A3" id="d3_a">
+                                <input type="number" name="n10" placeholder="Nhạp B3" id="d3_b">
+                                <input type="number" name="n11" placeholder="Nhạp C3" id="d3_c">
+                                <input type="number" name="n12" placeholder="Nhạp D3" id="d3_d">
+                            </div>
+                        </div>
                         <div class="kq">
-                            <button>Giải Phương Trình</button>
-                            <table>
+                            <button type="button" onclick="hpt_3an()">Giải Phương Trình</button>
+                            <table class="kq-table">
                                 <tr>
                                     <th>Biến</th>
                                     <th>Ngiệm</th>
                                 </tr>
                                 <tr>
-                                    <td>x1</td>
-                                    <td><output name="x1"></output> </td>
+                                    <td>x</td>
+                                    <td><output name="x1" id="x"></output> </td>
                                 </tr>
                                 <tr>
-                                    <td>x2</td>
-                                    <td><output name="x2"></output> </td>
+                                    <td>y</td>
+                                    <td><output name="x2" id="y"></output> </td>
                                 </tr>
                                 <tr>
-                                    <td>x3</td>
-                                    <td><output name="x3"></output> </td>
+                                    <td>y</td>
+                                    <td><output name="x2" id="z"></output> </td>
                                 </tr>
                             </table>
                         </div>
@@ -85,8 +108,8 @@
         <div class="quantam">
             <ul>
                 <li>*Có Thể Bạn Cũng Quan Tâm:</li>
-                <li><a href="bac2.html"><img src="img/but.png">Phương Trình Bậc 2.</a> </li>
-                <li><a href="bac3.html"><img src="img/but.png">Phương Trình Bậc 4.</a> </li>
+                <li><a href="he2.html"><img src="img/but.png">Hệ Phương Trình Hai Ẩn</a> </li>
+                <li><a href="he4.html"><img src="img/but.png">Hệ Phương Trình Bốn Ẩn.</a> </li>
             </ul>
         </div>
         <div class="cach"></div>
@@ -111,7 +134,6 @@
     </div>
     </div>
     <div class="col-20"></div>
-
-
 </body>
 </html>
+
